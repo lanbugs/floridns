@@ -71,6 +71,7 @@ services:
       retries: 5
 
   backend:
+    hostname: fdns-backend
     image: lanbugsde/floridns-backend:latest
     restart: unless-stopped
     depends_on:
